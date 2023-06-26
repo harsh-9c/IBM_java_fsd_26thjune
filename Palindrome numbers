@@ -1,0 +1,21 @@
+
+public class Main {
+    public static void main(String args[]) {
+        int num = 989, re = 0, remainder;
+    int originalNum = num;
+  
+    while (num != 0) {
+      remainder = num % 10;
+      re = re * 10 + remainder;
+      num /= 10;
+    }
+    
+
+    if (originalNum == re) {
+      System.out.println(originalNum + " is Palindrome.");
+    }
+    else {
+      System.out.println(originalNum + " is not Palindrome.");
+    }
+    }
+}
